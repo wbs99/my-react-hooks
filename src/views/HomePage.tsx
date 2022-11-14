@@ -1,8 +1,14 @@
 import styled from "styled-components"
 import { useTimeCount } from "../hooks/useCount"
+import { useTitle } from "../hooks/useTitle"
+
+interface Props {
+  title: string
+}
 
 
-export const HomePage = () => {
+export const HomePage: React.FC<Props> = (props) => {
+  useTitle(props.title)
   const { startCount, isCounting, count } = useTimeCount(3)
   const onClickSendValidationCode = () => {
     startCount()

@@ -4,12 +4,11 @@ import { NotFoundPage } from '../views/NotFoundPage';
 
 export const router = createBrowserRouter([
   {
-    path: '/', element: <HomePage />,
+    path: '/', element: <HomePage title='首页' />,
   },
   {
     path: "/home",
-    element: <HomePage />,
+    element: <HomePage title='首页' />,
     errorElement: <NotFoundPage />,
   },
-
 ]);
