@@ -34,7 +34,8 @@ export const LineChartDemo = () => {
     { date: '2000-01-29', value: 155000 },
     { date: '2000-01-31', value: 10000 },
   ].map(item => ({ x: item.date, y: item.value }))
+
   return (
-    <LineChart style={style} items={items} />
+    <LineChart style={style} dataSource={items} />
   )
 }

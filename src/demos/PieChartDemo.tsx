@@ -9,6 +9,6 @@ export const PieChartDemo = () => {
   ].map(item => ({ x: item.tag, y: item.amount / 100 }))
 
   return (
-    <PieChart items={items} style={style} />
+    <PieChart dataSource={items} style={style} />
   )
 }
