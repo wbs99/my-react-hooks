@@ -1,5 +1,7 @@
+import { useState } from "react"
+import { Link } from "react-router-dom"
 import styled from "styled-components"
-import { useTimeCount } from "../hooks/useCount"
+import { UseCountDemo } from "../demos/UseCountDemo"
 import { useTitle } from "../hooks/useTitle"
 
 interface Props {
@@ -9,25 +11,30 @@ interface Props {
 
 export const HomePage: React.FC<Props> = (props) => {
   useTitle(props.title)
-  const { startCount, isCounting, count } = useTimeCount(3)
-  const onClickSendValidationCode = () => {
-    startCount()
-  }
+  const [demoList] = useState([
+    { path: '/countDown', name: '倒计时' },
+  ])
   return (
-    <Wrapper>
-      <div>倒计时：{count}</div>
-      <button disabled={isCounting} onClick={onClickSendValidationCode}>
-        {isCounting ? <span>{count}秒后可重新发送</span> : <span>发送验证码</span>}
-      </button>
-    </Wrapper>
+    <WrapperDiv>
+      <ul>
+        {demoList.map(demo => <li key={demo.path}><Link to={demo.path}>{demo.name}</Link>  </li>)}
+      </ul>
+    </WrapperDiv>
   )
 }
 
-const Wrapper = styled.div`
- button {
-    &[disabled] {
-      opacity: 0.5;
-      cursor: not-allowed;
+const WrapperDiv = styled.div`
+  padding-left: 128px;
+    ul{
+      max-height: 80vh;
+      display: inline-flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      li{
+        padding: 6px;
+        &:hover{
+          color: #6135c0;
+        }
+      }
     }
-  }
 `
