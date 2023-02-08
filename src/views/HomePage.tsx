@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
-import { UseCountDemo } from "../demos/UseCountDemo"
 import { useTitle } from "../hooks/useTitle"
 
 interface Props {
@@ -13,6 +12,8 @@ export const HomePage: React.FC<Props> = (props) => {
   useTitle(props.title)
   const [demoList] = useState([
     { path: '/countDown', name: '倒计时' },
+    { path: '/lineChart', name: '折线图' },
+
   ])
   return (
     <WrapperDiv>

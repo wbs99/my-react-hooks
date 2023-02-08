@@ -6,6 +6,7 @@ specifiers:
   '@types/styled-components': 5.1.26
   '@vitejs/plugin-react': 2.1.0
   classnames: 2.3.2
+  echarts: 5.4.1
   react: 18.2.0
   react-dom: 18.2.0
   react-router-dom: 6.4.2
@@ -17,11 +18,12 @@ specifiers:
   vite: 3.1.0
 
 dependencies:
+  echarts: registry.npmmirror.com/echarts/5.4.1
   react: registry.npmmirror.com/react/18.2.0
   react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
   react-router-dom: registry.npmmirror.com/react-router-dom/6.4.2_biqbaboplfbrettd7655fr4n2y
   sass: registry.npmmirror.com/sass/1.55.0
-  styled-components: registry.npmmirror.com/styled-components/5.3.6_biqbaboplfbrettd7655fr4n2y
+  styled-components: registry.npmmirror.com/styled-components/5.3.6_vtcxgy2wlmese7djxl6h7ok674
   svgo: registry.npmmirror.com/svgo/2.8.0
   svgstore: registry.npmmirror.com/svgstore/3.0.1
 
@@ -591,7 +593,7 @@ packages:
       babel-plugin-syntax-jsx: registry.npmmirror.com/babel-plugin-syntax-jsx/6.18.0
       lodash: registry.npmmirror.com/lodash/4.17.21
       picomatch: registry.npmmirror.com/picomatch/2.3.1
-      styled-components: registry.npmmirror.com/styled-components/5.3.6_biqbaboplfbrettd7655fr4n2y
+      styled-components: registry.npmmirror.com/styled-components/5.3.6_vtcxgy2wlmese7djxl6h7ok674
     dev: false
 
   registry.npmmirror.com/babel-plugin-syntax-jsx/6.18.0:
@@ -853,6 +855,15 @@ packages:
       dom-serializer: registry.npmmirror.com/dom-serializer/1.4.1
       domelementtype: registry.npmmirror.com/domelementtype/2.3.0
       domhandler: registry.npmmirror.com/domhandler/4.3.1
+    dev: false
+
+  registry.npmmirror.com/echarts/5.4.1:
+    resolution: {integrity: sha512-9ltS3M2JB0w2EhcYjCdmtrJ+6haZcW6acBolMGIuf01Hql1yrIV01L1aRj7jsaaIULJslEP9Z3vKlEmnJaWJVQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/echarts/-/echarts-5.4.1.tgz}
+    name: echarts
+    version: 5.4.1
+    dependencies:
+      tslib: registry.npmmirror.com/tslib/2.3.0
+      zrender: registry.npmmirror.com/zrender/5.4.1
     dev: false
 
   registry.npmmirror.com/electron-to-chromium/1.4.284:
@@ -1531,7 +1542,7 @@ packages:
     deprecated: 'Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility'
     dev: false
 
-  registry.npmmirror.com/styled-components/5.3.6_biqbaboplfbrettd7655fr4n2y:
+  registry.npmmirror.com/styled-components/5.3.6_vtcxgy2wlmese7djxl6h7ok674:
     resolution: {integrity: sha512-hGTZquGAaTqhGWldX7hhfzjnIYBZ0IXQXkCYdvF1Sq3DsUaLx6+NTHC5Jj1ooM2F68sBiVz3lvhfwQs/S3l6qg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/styled-components/-/styled-components-5.3.6.tgz}
     id: registry.npmmirror.com/styled-components/5.3.6
     name: styled-components
@@ -1553,6 +1564,7 @@ packages:
       hoist-non-react-statics: registry.npmmirror.com/hoist-non-react-statics/3.3.2
       react: registry.npmmirror.com/react/18.2.0
       react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+      react-is: registry.npmmirror.com/react-is/16.13.1
       shallowequal: registry.npmmirror.com/shallowequal/1.1.0
       supports-color: registry.npmmirror.com/supports-color/5.5.0
     dev: false
@@ -1610,6 +1622,12 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: registry.npmmirror.com/is-number/7.0.0
+
+  registry.npmmirror.com/tslib/2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tslib/-/tslib-2.3.0.tgz}
+    name: tslib
+    version: 2.3.0
+    dev: false
 
   registry.npmmirror.com/tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tslib/-/tslib-2.4.0.tgz}
@@ -1669,3 +1687,11 @@ packages:
     optionalDependencies:
       fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: true
+
+  registry.npmmirror.com/zrender/5.4.1:
+    resolution: {integrity: sha512-M4Z05BHWtajY2241EmMPHglDQAJ1UyHQcYsxDNzD9XLSkPDqMq4bB28v9Pb4mvHnVQ0GxyTklZ/69xCFP6RXBA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/zrender/-/zrender-5.4.1.tgz}
+    name: zrender
+    version: 5.4.1
+    dependencies:
+      tslib: registry.npmmirror.com/tslib/2.3.0
+    dev: false
