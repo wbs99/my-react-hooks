@@ -1,9 +1,6 @@
 import { LineChart } from "../components/LineChart"
 
-type Props = {
-
-}
-export const LineChartDemo = (props: Props) => {
+export const LineChartDemo = () => {
   const style = { height: '120px' }
   const items = [
     { date: '2000-01-01', value: 15000 },

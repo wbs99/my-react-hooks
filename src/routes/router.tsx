@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { LineChartDemo } from '../demos/LineChartDemo';
+import { PieChartDemo } from '../demos/PieChartDemo';
 import { UseCountDemo } from '../demos/UseCountDemo';
 import { HomePage } from '../views/HomePage';
 import { NotFoundPage } from '../views/NotFoundPage';
@@ -21,6 +22,11 @@ export const router = createBrowserRouter([
   {
     path: "/lineChart",
     element: <LineChartDemo />,
+    errorElement: <NotFoundPage />,
+  },
+  {
+    path: "/pieChart",
+    element: <PieChartDemo />,
     errorElement: <NotFoundPage />,
   },
 ]);

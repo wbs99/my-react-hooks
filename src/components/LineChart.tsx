@@ -1,4 +1,4 @@
-import { ReactElement, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import * as echarts from 'echarts'
 
 type Props = {
@@ -60,6 +60,6 @@ export const LineChart: React.FC<Props> = (props) => {
     myChart.setOption(option)
   }, [])
   return (
-    <div ref={div} style={style} ></div>
+    <div ref={div} style={style}></div>
   )
 }

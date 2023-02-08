@@ -13,7 +13,7 @@ export const HomePage: React.FC<Props> = (props) => {
   const [demoList] = useState([
     { path: '/countDown', name: '倒计时' },
     { path: '/lineChart', name: '折线图' },
-
+    { path: '/pieChart', name: '饼图' },
   ])
   return (
     <WrapperDiv>
