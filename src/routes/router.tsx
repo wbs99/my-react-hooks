@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import { LineChartDemo } from '../demos/LineChartDemo';
 import { PieChartDemo } from '../demos/PieChartDemo';
 import { UseCountDemo } from '../demos/UseCountDemo';
+import { UseSwiperDemo } from '../demos/useSwiperDemo';
 import { HomePage } from '../views/HomePage';
 import { NotFoundPage } from '../views/NotFoundPage';
 
@@ -29,4 +30,9 @@ export const router = createBrowserRouter([
     element: <PieChartDemo />,
     errorElement: <NotFoundPage />,
   },
-]);
+  {
+    path: "/useSwiperDemo",
+    element: <UseSwiperDemo />,
+    errorElement: <NotFoundPage />,
+  },
+])

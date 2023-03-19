@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { useTimeCount } from "../hooks/useCount"
+import { useCountDown } from "../hooks/useCountDown"
 
 type Props = {
   countNumber?: number
@@ -7,7 +7,7 @@ type Props = {
 
 export const UseCountDemo = (props: Props) => {
   const { countNumber = 3 } = props
-  const { startCount, isCounting, count } = useTimeCount(countNumber)
+  const { startCount, isCounting, count } = useCountDown(countNumber)
   const onClickSendValidationCode = () => { startCount() }
   return (
     <Wrapper>

@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react"
 
 
-export const useTimeCount = (time: number) => {
+export const useCountDown = (time: number) => {
   const timer = useRef<number | undefined>()
   const [count, setCount] = useState(time)
   const [isCounting, setIsCounting] = useState(false)

@@ -14,6 +14,7 @@ export const HomePage: React.FC<Props> = (props) => {
     { path: '/countDown', name: '倒计时' },
     { path: '/lineChart', name: '折线图' },
     { path: '/pieChart', name: '饼图' },
+    { path: '/useSwiperDemo', name: '手势滑动' }
   ])
   return (
     <WrapperDiv>
